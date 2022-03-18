@@ -12,22 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-   
+
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon-32x32.png">
-    
+
 </head>
 
 <body>
     <!--Main heading-->
     <h1>Rock Paper Scissors Lizard spock</h1>
-    <p><i class="fas fa-hand-rock"></i><i class="fas fa-hand-paper"></i><i class="fas fa-hand-scissors"></i>
-        <i class="fas fa-hand-lizard"></i><i class="fas fa-hand-spock"></i></p>
+    <img class="logo" src="assets/Images/PinClipart.com_rock-paper-scissors-clipart_5745200.png"
+        alt="rock,paper,scissors,Lizard,spock logo">
 
 
-
-    <!--score area to display correct and incorrect scores-->
-
+   <!--timer in game-->
+   <div class="timer">
+    <span class="timer__part">00</span>
+   </div>
+   
+        <!--score area to display correct and incorrect scores-->
     <div class="score-area">
         <p class="scores">Player <span id="score">0</span></p>
         <p class="scores">Computer <span id="score">0</span></p>
@@ -48,20 +51,20 @@
             <div id="play-buttons" class="hide">
                 <button id="rock" class="btn btn--big">
                     <i class="fas fa-hand-rock"></i>Rock</button>
-                
-                    <button id="paper" class="btn btn--big">
+
+                <button id="paper" class="btn btn--big">
                     <i class="fas fa-hand-paper"></i>Paper</button>
-               
-                    <button id="scissors" class="btn btn--big">
+
+                <button id="scissors" class="btn btn--big">
                     <i class="fas fa-hand-scissors"></i></i>Scissors</button>
-                
-                    <button id="lizard" class="btn btn--big">
+
+                <button id="lizard" class="btn btn--big">
                     <i class="fas fa-hand-lizard">Lizard</i></button>
-                
-                        <button id="spock" class="btn btn--big">
+
+                <button id="spock" class="btn btn--big">
                     <i class="fas fa-hand-spock"></i>Spock</button>
 
-             </div>
+            </div>
 </body>
 
 </html>
