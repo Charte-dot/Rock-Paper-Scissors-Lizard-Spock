@@ -1,0 +1,141 @@
+/*body styling*/
+body {
+    background-color: rgb(54, 83, 139);
+}
+
+/*heading styling*/
+.heading {
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem rgb(25, 53, 95);
+    font-size: 3rem;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+/*Logo styling*/
+.logo {
+    width: 15rem;
+    height: 13rem;
+    margin-left: 40%;
+
+
+}
+
+/*game area*/
+.game-area {
+    background-color: rgba(245, 245, 245, 0.664);
+    border-radius: 5rem;
+    width: 45rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: .1rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
+    position: absolute;
+    top: 20rem;
+    bottom: 2rem;
+    left: 20rem;
+
+
+}
+
+.timer {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: .3rem solid rgb(235, 241, 247);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(218, 223, 231);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: .5rem;
+    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
+    position: absolute;
+    top: 20rem;
+    bottom: 2rem;
+}
+
+.scores {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: .3rem solid rgb(235, 241, 247);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(218, 223, 231);
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .5rem;
+    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
+    margin-left: 80rem;
+
+}
+
+.opening {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(25, 53, 95);
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+.instructions {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(189, 21, 21);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+.start-btn {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0.2rem;
+    margin-top: .5rem;
+    margin-left: 18rem;
+    width: 10rem;
+    height: 2.8rem;
+    background-color: rgb(54, 83, 139);
+    border: .3rem solid rgb(238, 242, 245);
+    border-radius: 1rem;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: .9rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
+}
+
+.btn {
+  margin: 0.2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(54, 83, 139);
+  border: .2rem solid rgb(237, 241, 245);
+  border-radius: 50rem;
+  font-size: 2rem;
+  padding: .5rem;
+  text-decoration: none;
+  color: whitesmoke;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
+
+}
+
+#rock,
+#paper,
+#scissors,
+#lizard,
+#spock {
+    color: whitesmoke;
+
+}

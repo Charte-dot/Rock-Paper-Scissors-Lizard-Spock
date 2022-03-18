@@ -20,51 +20,53 @@
 
 <body>
     <!--Main heading-->
-    <h1>Rock Paper Scissors Lizard spock</h1>
+    <h1 class="heading">Rock Paper Scissors Lizard spock</h1>
     <img class="logo" src="assets/Images/PinClipart.com_rock-paper-scissors-clipart_5745200.png"
         alt="rock,paper,scissors,Lizard,spock logo">
 
+    <!--timer in game-->
+    <div class="timer hide">
+        <span class="timer__part"><i class="fas fa-clock"></i> 00</span>
+    </div>
 
-   <!--timer in game-->
-   <div class="timer">
-    <span class="timer__part">00</span>
-   </div>
-   
-        <!--score area to display correct and incorrect scores-->
+    <!--score area to display correct and incorrect scores-->
     <div class="score-area">
-        <p class="scores">Player <span id="score">0</span></p>
-        <p class="scores">Computer <span id="score">0</span></p>
+        <p class="scores hide">Player <span id="score">0</span></p>
+        <p class="scores hide">Game <span id="score">0</span></p>
 
-        <!--game area to display buttons-->
+        <!--game area to display buttons and opening text-->
         <div class="game-area">
             <div id="menu">
-                <p class="opening">Play against the computer in this game of chance. <br>
+                <p class="opening hide">Play against the computer in this game of chance. <br>
                     Do you think you can win? </p>
-                <p>Instructions <br> The game is an expansion on the game Rock, Paper, Scissors. Each player picks a
+                <p class="instructions hide">Instructions <br> The game is an expansion on the game Rock, Paper, Scissors.
+                    Each player picks a
                     variable and reveals it at the same time. The winner is the one who defeats the other.
                 </p>
+                <button id="start" class="start-btn"> Let's Play</button>
 
-            </div>
+                <!--game buttons-->
+                <div id="play-buttons" class="hide">
+                    <!--rock-->
+                    <button id="rock" class="btn">
+                        <i class="fas fa-hand-rock"></i></button>
+                    <!--paper-->
+                    <button id="paper" class="btn">
+                        <i class="fas fa-hand-paper"></i></button>
+                    <!--scissors-->
+                    <button id="scissors" class="btn">
+                        <i class="fas fa-hand-scissors"></i></i></button>
+                    <!--lizard-->
+                    <button id="lizard" class="btn">
+                        <i class="fas fa-hand-lizard"></i></button>
+                    <!--spock-->
+                    <button id="spock" class="btn">
+                        <i class="fas fa-hand-spock"></i></button>
+                </div>
 
-            <!--game buttons-->
 
-            <div id="play-buttons" class="hide">
-                <button id="rock" class="btn btn--big">
-                    <i class="fas fa-hand-rock"></i>Rock</button>
 
-                <button id="paper" class="btn btn--big">
-                    <i class="fas fa-hand-paper"></i>Paper</button>
-
-                <button id="scissors" class="btn btn--big">
-                    <i class="fas fa-hand-scissors"></i></i>Scissors</button>
-
-                <button id="lizard" class="btn btn--big">
-                    <i class="fas fa-hand-lizard">Lizard</i></button>
-
-                <button id="spock" class="btn btn--big">
-                    <i class="fas fa-hand-spock"></i>Spock</button>
-
-            </div>
+                <script src="assets/js/script.js"></script>
 </body>
 
 </html>
