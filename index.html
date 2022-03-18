@@ -25,14 +25,14 @@
         alt="rock,paper,scissors,Lizard,spock logo">
 
     <!--timer in game-->
-    <div class="timer hide">
+    <div id="timer" class="hide">
         <span class="timer__part"><i class="fas fa-clock"></i> 00</span>
     </div>
 
     <!--score area to display correct and incorrect scores-->
     <div class="score-area">
-        <p class="scores hide">Player <span id="score">0</span></p>
-        <p class="scores hide">Game <span id="score">0</span></p>
+        <p id="player" class="hide">Player <span id="score">0</span></p>
+        <p id="game" class="scores hide">Game <span id="score">0</span></p>
 
         <!--game area to display buttons and opening text-->
         <div class="game-area">
@@ -65,7 +65,7 @@
                 </div>
 
 
-
+                  <!--javascript-->
                 <script src="assets/js/script.js"></script>
 </body>
 

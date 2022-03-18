@@ -41,8 +41,8 @@ body {
 
 
 }
-
-.timer {
+/*game timer*/
+#timer {
     width: 10rem;
     height: 3rem;
     border-radius: 1rem;
@@ -59,7 +59,8 @@ body {
     bottom: 2rem;
 }
 
-.scores {
+/*scores*/
+#player, #game {
     width: 10rem;
     height: 3rem;
     border-radius: 1rem;
@@ -76,6 +77,7 @@ body {
 
 }
 
+/*main text*/
 .opening {
     font-family: 'Orbitron', sans-serif;
     color: rgb(25, 53, 95);
@@ -86,6 +88,7 @@ body {
     margin-top: .5rem;
 }
 
+/*instruction text*/
 .instructions {
     font-family: 'Orbitron', sans-serif;
     color: rgb(189, 21, 21);
@@ -95,6 +98,7 @@ body {
     margin-top: .5rem;
 }
 
+/*start button*/
 .start-btn {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
@@ -113,7 +117,7 @@ body {
     font-size: .9rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 }
-
+/*game buttons*/
 .btn {
     margin: 0.2rem;
     margin-top: 1rem;
@@ -130,7 +134,7 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 
 }
-
+/*button symbols*/
 #rock,
 #paper,
 #scissors,
@@ -146,6 +150,7 @@ body {
     border-color: rgb(18, 133, 199);
 }
 
+/*color when button selected*/
 .btn:focus {
     border-color: rgb(179, 9, 9);
 
