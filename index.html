@@ -25,48 +25,59 @@
         alt="rock,paper,scissors,Lizard,spock logo">
 
     <!--timer in game-->
-    <div id="timer" class="hide">
-        <span class="timer__part"><i class="fas fa-clock"></i> 00</span>
+    <div id="round" class="hide">
+        <span class="round-count">0/5</span>
     </div>
 
     <!--score area to display correct and incorrect scores-->
-    <div class="score-area">
-        <p id="player" class="hide">Player <span id="score">0</span></p>
-        <p id="game" class="scores hide">Game <span id="score">0</span></p>
+    <div id="score-area" class="hide">
+        <p class="player">Player <span id="score">0</span></p>
+        <p class="game">Game <span id="score">0</span></p>
+    </div>
 
-        <!--game area to display buttons and opening text-->
-        <div class="game-area">
-            <div id="menu">
-                <p class="opening hide">Play against the computer in this game of chance. <br>
-                    Do you think you can win? </p>
-                <p class="instructions hide">Instructions <br> The game is an expansion on the game Rock, Paper, Scissors.
-                    Each player picks a
-                    variable and reveals it at the same time. The winner is the one who defeats the other.
-                </p>
-                <button id="start" class="start-btn"> Let's Play</button>
+    <!--game area to display buttons and opening text-->
+    <div class="game-area">
+        <div id="menu">
+            <p id="opening">Play against the computer in this game of chance. <br>
+                Do you think you can win?</p>
+            <p id="instruction">Instructions <br> The game is an expansion on the game Rock, Paper,
+                Scissors.
+                Each player picks a
+                variable and reveals it at the same time. The winner is the one who defeats the other.
+            </p>
+            <!--start and restart button-->
+            <button id="start" class="start-btn"> Let's Play</button>
+            <button id="restart" class="restart-btn hide"> Play again?</button>
 
-                <!--game buttons-->
-                <div id="play-buttons" class="hide">
-                    <!--rock-->
-                    <button id="rock" class="btn">
-                        <i class="fas fa-hand-rock"></i></button>
-                    <!--paper-->
-                    <button id="paper" class="btn">
-                        <i class="fas fa-hand-paper"></i></button>
-                    <!--scissors-->
-                    <button id="scissors" class="btn">
-                        <i class="fas fa-hand-scissors"></i></i></button>
-                    <!--lizard-->
-                    <button id="lizard" class="btn">
-                        <i class="fas fa-hand-lizard"></i></button>
-                    <!--spock-->
-                    <button id="spock" class="btn">
-                        <i class="fas fa-hand-spock"></i></button>
-                </div>
+            <!--game buttons-->
+            <div id="play-buttons" class="hide">
+                <!--rock-->
+                <button id="rock" class="btn">
+                    <i class="fas fa-hand-rock"></i></button>
+                <!--paper-->
+                <button id="paper" class="btn">
+                    <i class="fas fa-hand-paper"></i></button>
+                <!--scissors-->
+                <button id="scissors" class="btn">
+                    <i class="fas fa-hand-scissors"></i></i></button>
+                <!--lizard-->
+                <button id="lizard" class="btn">
+                    <i class="fas fa-hand-lizard"></i></button>
+                <!--spock-->
+                <button id="spock" class="btn">
+                    <i class="fas fa-hand-spock"></i></button>
+            </div>
 
+            <!--choice and results-->
+            <h2 class="hide">Game choice:<span id="game-choice"></span></h2>
+            <h2 class="hide">Player choice:<span id="player-choice"></span></h2>
+            <h2 class="hide">Result:<span id="result"></span></h2>
 
-                  <!--javascript-->
-                <script src="assets/js/script.js"></script>
+            <!--javascript-->
+            <script src="assets/js/script.js"></script>
 </body>
+
+
+
 
 </html>

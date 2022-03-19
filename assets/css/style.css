@@ -41,8 +41,9 @@ body {
 
 
 }
-/*game timer*/
-#timer {
+
+/*round counter*/
+#round {
     width: 10rem;
     height: 3rem;
     border-radius: 1rem;
@@ -60,25 +61,23 @@ body {
 }
 
 /*scores*/
-#player, #game {
-    width: 10rem;
-    height: 3rem;
+#score-area {
+    width: 12rem;
+    height: 10rem;
     border-radius: 1rem;
     border: .3rem solid rgb(235, 241, 247);
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     color: rgb(218, 223, 231);
     font-size: 2rem;
-    text-align: center;
     padding: .5rem;
-    margin-top: .5rem;
     box-shadow: 0 0 10px 2px rgb(4, 9, 17);
     margin-left: 80rem;
 
 }
 
 /*main text*/
-.opening {
+#opening {
     font-family: 'Orbitron', sans-serif;
     color: rgb(25, 53, 95);
     text-align: center;
@@ -89,17 +88,19 @@ body {
 }
 
 /*instruction text*/
-.instructions {
+#instruction {
     font-family: 'Orbitron', sans-serif;
     color: rgb(189, 21, 21);
     text-align: center;
     font-size: 1.2rem;
     padding: 0;
     margin-top: .5rem;
+   
 }
 
+
 /*start button*/
-.start-btn {
+.start-btn, .restart-btn {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
     margin-top: .5rem;
@@ -117,6 +118,7 @@ body {
     font-size: .9rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 }
+
 /*game buttons*/
 .btn {
     margin: 0.2rem;
@@ -134,24 +136,43 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 
 }
+
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(25, 53, 95);
+        text-align: center;
+        text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: 1rem;
+        
+        
+    }
+
 /*button symbols*/
-#rock,
-#paper,
-#scissors,
-#lizard,
-#spock {
-    color: whitesmoke;
+    #rock,
+    #paper,
+    #scissors,
+    #lizard,
+    #spock {
+        color: whitesmoke;
 
-}
+    }
 
-/*button hover effects*/
-.btn:hover,
-.start-btn:hover {
-    border-color: rgb(18, 133, 199);
-}
+    /*button hover effects*/
+    .btn:hover,
+    .start-btn:hover,  
+    .restart-btn:hover {
+        border-color: rgb(18, 133, 199);
+    }
 
-/*color when button selected*/
-.btn:focus {
-    border-color: rgb(179, 9, 9);
+    /*color when button selected*/
+    .btn:focus {
+        border-color: rgb(179, 9, 9);
 
-}
+    }
+
+    .hide {
+        display: none;
+
+    }
