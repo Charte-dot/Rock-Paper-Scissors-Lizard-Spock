@@ -100,7 +100,7 @@ body {
 
 
 /*start button*/
-.start-btn, .restart-btn {
+#start, #restart {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
     margin-top: .5rem;
@@ -144,9 +144,8 @@ body {
         text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
         font-size: 1.5rem;
         padding: 0;
-        margin-top: 1rem;
-        
-        
+        margin-top: 2rem;
+      
     }
 
 /*button symbols*/
@@ -160,9 +159,12 @@ body {
     }
 
     /*button hover effects*/
-    .btn:hover,
-    .start-btn:hover,  
-    .restart-btn:hover {
+    .btn:hover {
+        border-color: rgb(18, 133, 199);
+    }
+
+    #start:hover, #restart
+    {
         border-color: rgb(18, 133, 199);
     }
 
