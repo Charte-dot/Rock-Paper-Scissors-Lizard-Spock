@@ -40,8 +40,8 @@ function startGame() {
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click', (e) => {
   playerChoice = e.target.id;
   playerChoiceDisplay.innerHTML = playerChoice;
-  generateGameChoice();
-  getResults();
+  generateGameChoice()
+  getResults()
 }))
 
 /**
@@ -51,28 +51,28 @@ function generateGameChoice() {
   const randomNumber = Math.floor(Math.random() * 5) + 1
   console.log(randomNumber);
 
-  if (randomNumber === 1); {
-    gameChoice = 'lizard';
+  if (randomNumber === 1) {
+    gameChoice = 'lizard'
   }
 
-  if (randomNumber === 2); {
-    gameChoice = 'spock';
+  if (randomNumber === 2) {
+    gameChoice = 'spock'
   }
 
-  if (randomNumber === 3); {
-    gameChoice = 'paper';
+  if (randomNumber === 3) {
+    gameChoice = 'paper'
   }
 
-  if (randomNumber === 4); {
-    gameChoice = 'rock';
+  if (randomNumber === 4) {
+    gameChoice = 'rock'
   }
 
-  if (randomNumber === 5); {
-    gameChoice = 'scissors';
+  if (randomNumber === 5) {
+    gameChoice = 'scissors'
   }
 
   gameChoiceDisplay.innerHTML = gameChoice
-};
+}
 
 /**
  * game win, loose, draw senarios
