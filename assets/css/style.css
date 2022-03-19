@@ -42,24 +42,6 @@ body {
 
 }
 
-/*round counter*/
-#round {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 1rem;
-    border: .3rem solid rgb(235, 241, 247);
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(218, 223, 231);
-    font-size: 2rem;
-    text-align: center;
-    margin-top: .5rem;
-    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
-    position: absolute;
-    top: 20rem;
-    bottom: 2rem;
-}
-
 /*scores*/
 #score-area {
     width: 12rem;
