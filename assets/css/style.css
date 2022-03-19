@@ -95,12 +95,13 @@ body {
     font-size: 1.2rem;
     padding: 0;
     margin-top: .5rem;
-   
+
 }
 
 
 /*start button*/
-#start, #restart {
+#start,
+#restart {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
     margin-top: .5rem;
@@ -137,44 +138,44 @@ body {
 
 }
 
-    h2 {
-        font-family: 'Orbitron', sans-serif;
-        color: rgb(25, 53, 95);
-        text-align: center;
-        text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
-        font-size: 1.5rem;
-        padding: 0;
-        margin-top: 2rem;
-      
-    }
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(25, 53, 95);
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: 2rem;
+
+}
 
 /*button symbols*/
-    #rock,
-    #paper,
-    #scissors,
-    #lizard,
-    #spock {
-        color: whitesmoke;
+#rock,
+#paper,
+#scissors,
+#lizard,
+#spock {
+    color: whitesmoke;
 
-    }
+}
 
-    /*button hover effects*/
-    .btn:hover {
-        border-color: rgb(18, 133, 199);
-    }
+/*button hover effects*/
+.btn:hover {
+    border-color: rgb(18, 133, 199);
+}
 
-    #start:hover, #restart
-    {
-        border-color: rgb(18, 133, 199);
-    }
+#start:hover,
+#restart {
+    border-color: rgb(18, 133, 199);
+}
 
-    /*color when button selected*/
-    .btn:focus {
-        border-color: rgb(179, 9, 9);
+/*color when button selected*/
+.btn:focus {
+    border-color: rgb(179, 9, 9);
 
-    }
+}
 
-    .hide {
-        display: none;
+.hide {
+    display: none;
 
-    }
+}
