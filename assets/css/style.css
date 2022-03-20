@@ -8,7 +8,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     text-align: center;
-    text-shadow: 0.3rem 0.3rem rgb(25, 53, 95);
+    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
     font-size: 3rem;
     padding: 0;
     margin-top: .5rem;
@@ -45,7 +45,7 @@ body {
 /*scores*/
 #score-area {
     width: 12rem;
-    height: 10rem;
+    height: 6rem;
     border-radius: 1rem;
     border: .3rem solid rgb(235, 241, 247);
     text-decoration: none;
@@ -55,6 +55,7 @@ body {
     padding: .5rem;
     box-shadow: 0 0 10px 2px rgb(4, 9, 17);
     margin-left: 80rem;
+    margin-top: 1rem;
 
 }
 
@@ -69,12 +70,14 @@ body {
     margin-top: .5rem;
 }
 
+
+
 /*instruction text*/
 #instruction {
     font-family: 'Orbitron', sans-serif;
-    color: rgb(189, 21, 21);
+    color: rgb(158, 14, 26);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0;
     margin-top: .5rem;
 
@@ -103,7 +106,11 @@ body {
 }
 
 /*game buttons*/
-.btn {
+#rock,
+#paper,
+#scissors,
+#lizard,
+#spock {
     margin: 0.2rem;
     margin-top: 1rem;
     margin-left: 2rem;
@@ -131,6 +138,17 @@ h2 {
 
 }
 
+#results {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(25, 53, 95);
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: .5rem;
+
+}
+
 /*button symbols*/
 #rock,
 #paper,
@@ -147,12 +165,22 @@ h2 {
 }
 
 #start:hover,
-#restart {
+#restart:hover,
+#rock:hover,
+#paper:hover,
+#scissors:hover,
+#lizard:hover
+#spock:hover
+{
     border-color: rgb(18, 133, 199);
 }
 
 /*color when button selected*/
-.btn:focus {
+#rock:focus,
+#paper:focus,
+#scissors:focus,
+#lizard:focus,
+#spock:focus {
     border-color: rgb(179, 9, 9);
 
 }

@@ -1,19 +1,23 @@
-const gameChoiceDisplay = document.getElementById("game-choice");
-const playerChoiceDisplay = document.getElementById("player-choice");
-const resultDisplay = document.getElementById("result");
+const playerScore_span = document.getElementById("player-score");
+const gameScore_span = document.getElementById("game-score");
+const resultDisplay = document.getElementById("results");
 const startButton = document.getElementById("start");
 const restartButton = document.getElementById("restart");
 const scoreArea = document.getElementById("score-area");
 const openingElement = document.getElementById("opening");
 const instructionElement = document.getElementById("instruction");
-const playButtons = document.getElementById("play-buttons");
-const possibleChoices = document.querySelectorAll("button");
-let playerChoice;
-let gameChoice;
+const rockOption = document.getElementById("rock");
+const paperOption = document.getElementById("paper");
+const scissorsOption = document.getElementById("scissors");
+const lizardOption = document.getElementById("lizard");
+const spockOption = document.getElementById("spock");
+
+let playerScore = 0;
+let gameScore = 0;
 
 
 /**
- * event listeners
+ *start button event listeners
  */
 
 startButton.addEventListener('click', startGame);
@@ -22,62 +26,35 @@ startButton.addEventListener('click', startGame);
  * start game
  */
 function startGame() {
-  startButton.classList.add('hide');
-  restartButton.classList.add('hide');
-  openingElement.classList.add('hide');
-  instructionElement.classList.add('hide');
-  scoreArea.classList.remove('hide');
-  playButtons.classList.remove('hide');
-  gameChoiceDisplay.classList.remove('hide');
-  playerChoiceDisplay.classList.remove('hide');
-  resultDisplay.classList.remove('hide');
+  startButton.classList.add("hide");
+  restartButton.classList.add("hide");
+  openingElement.classList.add("hide");
+  instructionElement.classList.add("hide");
+  scoreArea.classList.remove("hide");
+  resultDisplay.classList.remove("hide")
+  rockOption.classList.remove("hide");
+  paperOption.classList.remove("hide");
+  scissorsOption.classList.remove("hide");
+  lizardOption.classList.remove("hide");
+  spockOption.classList.remove("hide");
 
 }
-
-/**
- * player choices button selector
- */
-possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener('click', (e) => {
-  playerChoice = e.target.id;
-  playerChoiceDisplay.innerHTML = playerChoice;
-  generateGameChoice()
-  getResults()
-}))
 
 /**
  * random game move selection
  */
-function generateGameChoice() {
-  const randomNumber = Math.floor(Math.random() * 5) + 1
-  console.log(randomNumber);
-
-  if (randomNumber === 1) {
-    gameChoice = 'lizard'
-  }
-
-  if (randomNumber === 2) {
-    gameChoice = 'spock'
-  }
-
-  if (randomNumber === 3) {
-    gameChoice = 'paper'
-  }
-
-  if (randomNumber === 4) {
-    gameChoice = 'rock'
-  }
-
-  if (randomNumber === 5) {
-    gameChoice = 'scissors'
-  }
-
-  gameChoiceDisplay.innerHTML = gameChoice
-}
+function getGameChoice() {
+  const option = ['rock' , 'paper' , 'scissors' , 'lizard' , 'spock'];
+  const randomNumber = Math.floor(Math.random() * 5) + 1;
+  return option[randomNumber];
+ }
 
 /**
  * game win, loose, draw senarios
  */
-const getResults = () => {
+
+function game(playerChoice) {
+const gameChoice = getGameChoice();
   switch (playerChoice + gameChoice) {
     case 'rockscissors':
     case 'rocklizard':
@@ -89,7 +66,7 @@ const getResults = () => {
     case 'lizardpaper':
     case 'spockrock':
     case 'spockscissors':
-      resultDisplay.innerHTML = "You Win!"
+      win(playerChoice, gameChoice); 
       break;
     case 'rockspock':
     case 'rockpaper':
@@ -101,16 +78,27 @@ const getResults = () => {
     case 'lizardscissors':
     case 'spockpaper':
     case 'spocklizard':
-      resultDisplay.innerHTML = "You Loose!"
+      lose(playerChoice, gameChoice); 
       break;
     case 'rockrock':
     case 'paperpaper':
     case 'lizardlizard':
     case 'scissorscissors':
     case 'spockspock':
-      resultDisplay.innerHTML = "It's a Draw!"
-
-
+      Draw (playerChoice, gameChoice); 
+}
   }
 
-};
+  function main () {
+    rockOption.addEventListener('click' , () => game("rock"));
+    
+    paperOption.addEventListener('click' , () => game("paper"));
+    
+    scissorsOption.addEventListener('click' , () => game("sissors"));
+    
+    lizardOption.addEventListener('click' , () => game("lizard"));
+    
+    spockOption.addEventListener('click' , () => game("spock"));
+  }
+
+  main();

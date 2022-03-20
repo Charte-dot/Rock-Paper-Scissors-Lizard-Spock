@@ -28,9 +28,11 @@
 
     <!--score area to display correct and incorrect scores-->
     <div id="score-area" class="hide">
-        <p class="player">Player <span id="score">0</span></p>
-        <p class="game">Game <span id="score">0</span></p>
-    </div>
+     <div id="player">Player : <span id="player-score">0</span> </div>
+     <div id="game">Game :<span id="game-score">0</span></div>
+     </div>
+        
+
 
     <!--game area to display buttons and opening text-->
     <div class="game-area">
@@ -47,27 +49,27 @@
             <button id="restart" class="restart-btn hide"> Play again?</button>
 
             <!--game buttons-->
-            <div id="play-buttons" class="hide">
+            <div class="option">
                 <!--rock-->
-                <button id="rock" class="btn">
+                <button id="rock" class="option hide">
                     <i class="fas fa-hand-rock"></i></button>
                 <!--paper-->
-                <button id="paper" class="btn">
+                <button id="paper" class="option hide">
                     <i class="fas fa-hand-paper"></i></button>
                 <!--scissors-->
-                <button id="scissors" class="btn">
+                <button id="scissors" class="option hide">
                     <i class="fas fa-hand-scissors"></i></i></button>
                 <!--lizard-->
-                <button id="lizard" class="btn">
+                <button id="lizard" class="option hide">
                     <i class="fas fa-hand-lizard"></i></button>
                 <!--spock-->
-                <button id="spock" class="btn">
+                <button id="spock" class="option hide">
                     <i class="fas fa-hand-spock"></i></button>
 
-                    <!--choice and results-->
-                <h2>Player choice: <span id="player-choice"></span></h2>
-                <h2>Game choice: <span id="game-choice"></span></h2>
-                <h2>Result: <span id="result"></span></h2>
+                <!--Results-->
+                <div id="results" class="hide">
+                    <p>Scissors cuts paper. You Win!</p>
+                </div>
 
             </div>
 
