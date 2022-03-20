@@ -108,12 +108,12 @@ function win(playerChoice, gameChoice) {
   playerScore++;
   playerScore_span.innerHTML = playerScore;
   gameScore_span.innerHTML = gameScore;
-  resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}.... You Win!`
+  resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}.... You Win!`;
 
-  if (playerScore > 4) {
-    resultDisplay.innerHTML = "Game over, you win!"
+  if (playerScore > 9) {
+    resultDisplay.innerHTML = "Game over, you win!";
     endGame();
-  };
+  }
 }
 
 //lose function
@@ -122,18 +122,18 @@ function lose(playerChoice, gameChoice) {
   gameScore++;
   playerScore_span.innerHTML = playerScore;
   gameScore_span.innerHTML = gameScore;
-  resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!`
+  resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!`;
 
-  if (gameScore > 4) {
-    resultDisplay.innerHTML = "Game over, you Loose!"
+  if (gameScore > 9) {
+    resultDisplay.innerHTML = "Game over, you Loose!";
     endGame();
-  };
+  }
 }
 
 //draw function
 
 function draw(playerChoice, gameChoice) {
-  resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`
+  resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`;
 }
 
 //end game and reset scores to play again//
@@ -141,16 +141,18 @@ function draw(playerChoice, gameChoice) {
 function endGame() {
   restartButton.classList.remove("hide");
   rockOption.classList.add("hide");
-  paperOption.classList.add("hide");
+  paperOption.classList.add("hide"); 
   scissorsOption.classList.add("hide");
   lizardOption.classList.add("hide");
   spockOption.classList.add("hide");
-  playerScore = 0;
-  gameScore = 0;
   playerScore_span.innerHTML = playerScore;
   gameScore_span.innerHTML = gameScore;
+  playerScore = 0;
+  gameScore = 0;
+  
 
 }
 
+
 //event listener for restart button
-restartButton.addEventListener('click', startGame)
+restartButton.addEventListener('click', startGame);
