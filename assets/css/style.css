@@ -138,13 +138,13 @@ h2 {
 
 }
 
-#results {
+#result {
     font-family: 'Orbitron', sans-serif;
     color: rgb(25, 53, 95);
     text-align: center;
     text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
     font-size: 1.5rem;
-    padding: 0;
+    padding: 1rem;
     margin-top: .5rem;
 
 }

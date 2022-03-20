@@ -1,6 +1,6 @@
 const playerScore_span = document.getElementById("player-score");
 const gameScore_span = document.getElementById("game-score");
-const resultDisplay = document.getElementById("results");
+const resultDisplay = document.getElementById("result");
 const startButton = document.getElementById("start");
 const restartButton = document.getElementById("restart");
 const scoreArea = document.getElementById("score-area");
@@ -31,7 +31,7 @@ function startGame() {
   openingElement.classList.add("hide");
   instructionElement.classList.add("hide");
   scoreArea.classList.remove("hide");
-  resultDisplay.classList.remove("hide")
+  resultDisplay.classList.remove("hide");
   rockOption.classList.remove("hide");
   paperOption.classList.remove("hide");
   scissorsOption.classList.remove("hide");
@@ -85,20 +85,40 @@ const gameChoice = getGameChoice();
     case 'lizardlizard':
     case 'scissorscissors':
     case 'spockspock':
-      Draw (playerChoice, gameChoice); 
+      draw (playerChoice, gameChoice); 
+      break;
 }
-  }
+  
+}
 
   function main () {
-    rockOption.addEventListener('click' , () => game("rock"));
+    rockOption.addEventListener('click', () => game("rock"));
     
-    paperOption.addEventListener('click' , () => game("paper"));
+    paperOption.addEventListener('click', () => game("paper"));
     
-    scissorsOption.addEventListener('click' , () => game("sissors"));
+    scissorsOption.addEventListener('click', () => game("sissors"));
     
-    lizardOption.addEventListener('click' , () => game("lizard"));
+    lizardOption.addEventListener('click', () => game("lizard"));
     
-    spockOption.addEventListener('click' , () => game("spock"));
+    spockOption.addEventListener('click', () => game("spock"));
   }
 
   main();
+
+  function win(playerChoice, gameChoice) {
+    playerScore++;
+    playerScore_span.innerHTML = playerScore;
+    gameScore_span.innerHTML = gameScore;
+    resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}. You Win!` 
+  }
+
+  function lose(playerChoice, gameChoice) {
+    gameScore++;
+    playerScore_span.innerHTML = playerScore;
+    gameScore_span.innerHTML = gameScore;
+    resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}. You Loose!` 
+  }
+
+  function draw(playerChoice, gameChoice){
+    resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}. Its a Draw!`
+  }
