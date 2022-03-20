@@ -91,6 +91,8 @@ const gameChoice = getGameChoice();
   
 }
 
+//game button event listeners//
+
   function main () {
     rockOption.addEventListener('click', () => game("rock"));
     
@@ -105,11 +107,19 @@ const gameChoice = getGameChoice();
 
   main();
 
+  //score tracker and result display//
   function win(playerChoice, gameChoice) {
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     gameScore_span.innerHTML = gameScore;
     resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}.... You Win!` 
+
+    if (userScore < 5){
+      
+  } else if(userScore === 5){
+    resultDisplay.innerHTML = "Game over, you win!"
+    endGame();
+  };
   }
 
   function lose(playerChoice, gameChoice) {
@@ -117,8 +127,34 @@ const gameChoice = getGameChoice();
     playerScore_span.innerHTML = playerScore;
     gameScore_span.innerHTML = gameScore;
     resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!` 
+
+    if (usercore < 5){
+      
+  } else if(gameScore === 5){
+    resultDisplay.innerHTML = "Game over, you Loose!"
+    endGame();
+  };
   }
 
   function draw(playerChoice, gameChoice){
     resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`
-  }
+}
+
+function endGame() {
+  restartButton.classList.remove("hide")
+  rockOption.classList.add("hide");
+  paperOption.classList.add("hide");
+  scissorsOption.classList.add("hide");
+  lizardOption.classList.add("hide");
+  spockOption.classList.add("hide");
+  playerScore = 0;
+  gameScore = 0;
+  playerScore_span.innerHTML = userScore;
+  gameScore_span.innerHTML = compScore;
+
+}
+
+restartButton.addEventListener('click' , startGame)
+
+
+  
