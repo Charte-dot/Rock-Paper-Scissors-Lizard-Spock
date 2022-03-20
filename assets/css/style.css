@@ -12,13 +12,28 @@ body {
     font-size: 3rem;
     padding: 0;
     margin-top: .5rem;
+    margin-left: 7rem;
+
+}
+
+.footer {
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem rgb(15, 32, 58);
+    font-size: 1rem;
+    padding: 0;
+    margin-top: .5rem;
+    margin-left: 7rem;
+
 }
 
 /*Logo styling*/
 .logo {
-    width: 15rem;
-    height: 13rem;
-    margin-left: 40%;
+    width: 12rem;
+    height: 10rem;
+    margin-left: 45%;
+    padding-bottom: 1rem;
 
 
 }
@@ -27,37 +42,58 @@ body {
 .game-area {
     background-color: rgba(245, 245, 245, 0.664);
     border-radius: 5rem;
-    width: 50rem;
+    width: 55rem;
     height: 18rem;
     margin: auto;
     margin-top: .1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 3rem;
     box-shadow: 0 0 10px 2px rgb(4, 9, 17);
-    position: absolute;
-    top: 20rem;
-    bottom: 2rem;
-    left: 20rem;
+    position:relative;
+    top: 1rem;
+    bottom: 3rem;
+    left: 3rem;
 
 
 }
 
 /*scores*/
-#score-area {
+#player {
     width: 12rem;
-    height: 6rem;
+    height: 3rem;
+    background-color: rgb(54, 83, 139);
     border-radius: 1rem;
     border: .3rem solid rgb(235, 241, 247);
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
-    color: rgb(218, 223, 231);
+    color: whitesmoke;
+    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
     font-size: 2rem;
     padding: .5rem;
-    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
-    margin-left: 80rem;
-    margin-top: 1rem;
-
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    display: inline;
 }
+
+#game {
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(54, 83, 139);
+    border-radius: 1rem;
+    border: .3rem solid whitesmoke;;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
+    font-size: 2rem;
+    padding: .5rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
+    margin-left: 25rem;
+    margin-top: 0.5rem;
+    display: inline;
+}
+
 
 /*main text*/
 #opening {
@@ -90,9 +126,9 @@ body {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
     margin-top: .5rem;
-    margin-left: 18rem;
-    width: 10rem;
-    height: 3rem;
+    margin-left: 20rem;
+    width: 15rem;
+    height: 5rem;
     background-color: rgb(54, 83, 139);
     border: .3rem solid rgb(238, 242, 245);
     border-radius: 1rem;
@@ -100,9 +136,10 @@ body {
     padding: .5rem;
     text-decoration: none;
     color: whitesmoke;
+    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
     font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
+    font-size: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
 }
 
 /*game buttons*/
@@ -112,10 +149,11 @@ body {
 #lizard,
 #spock {
     margin: 0.2rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
     width: 6rem;
     height: 6rem;
+    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
     background-color: rgb(54, 83, 139);
     border: .2rem solid rgb(237, 241, 245);
     border-radius: 50rem;
@@ -127,16 +165,6 @@ body {
 
 }
 
-h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(25, 53, 95);
-    text-align: center;
-    text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
-    font-size: 1.5rem;
-    padding: 0;
-    margin-top: 2rem;
-
-}
 
 #result {
     font-family: 'Orbitron', sans-serif;
@@ -145,7 +173,7 @@ h2 {
     text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
     font-size: 2rem;
     padding: 3rem;
-    margin-top: .5rem;
+    margin-top: .1rem;
 
 }
 
@@ -169,9 +197,7 @@ h2 {
 #rock:hover,
 #paper:hover,
 #scissors:hover,
-#lizard:hover
-#spock:hover
-{
+#lizard:hover #spock:hover {
     border-color: rgb(18, 133, 199);
 }
 

@@ -93,7 +93,7 @@ function main() {
 
   paperOption.addEventListener('click', () => game("paper"));
 
-  scissorsOption.addEventListener('click', () => game("sissors"));
+  scissorsOption.addEventListener('click', () => game("scissors"));
 
   lizardOption.addEventListener('click', () => game("lizard"));
 
@@ -145,10 +145,10 @@ function endGame() {
   scissorsOption.classList.add("hide");
   lizardOption.classList.add("hide");
   spockOption.classList.add("hide");
-  playerScore_span.innerHTML = playerScore;
-  gameScore_span.innerHTML = gameScore;
   playerScore = 0;
   gameScore = 0;
+  playerScore_span.innerHTML = playerScore;
+  gameScore_span.innerHTML = gameScore;
   
 
 }
