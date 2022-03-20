@@ -92,7 +92,7 @@ body {
     margin-top: .5rem;
     margin-left: 18rem;
     width: 10rem;
-    height: 2.8rem;
+    height: 3rem;
     background-color: rgb(54, 83, 139);
     border: .3rem solid rgb(238, 242, 245);
     border-radius: 1rem;
@@ -101,7 +101,7 @@ body {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 1rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 }
 
