@@ -109,16 +109,16 @@ const gameChoice = getGameChoice();
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     gameScore_span.innerHTML = gameScore;
-    resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}. You Win!` 
+    resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}.... You Win!` 
   }
 
   function lose(playerChoice, gameChoice) {
     gameScore++;
     playerScore_span.innerHTML = playerScore;
     gameScore_span.innerHTML = gameScore;
-    resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}. You Loose!` 
+    resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!` 
   }
 
   function draw(playerChoice, gameChoice){
-    resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}. Its a Draw!`
+    resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`
   }
