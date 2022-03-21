@@ -1,6 +1,7 @@
 /*body styling*/
 body {
-    background-color: rgb(54, 83, 139);
+    background-image: url(../Images/quiz-background.jpg);
+    background-size: cover;
 }
 
 /*heading styling*/
@@ -8,7 +9,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     text-align: center;
-    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
+    text-shadow: 0.2rem 0.2rem  rgb(4,124,218);
     font-size: 3rem;
     padding: 0;
     margin-top: .5rem;
@@ -20,20 +21,25 @@ body {
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     text-align: center;
-    text-shadow: 0.2rem 0.2rem rgb(15, 32, 58);
+    text-shadow: 0.1rem 0.1rem rgb(4,124,218);
     font-size: 1rem;
-    padding: 0;
-    margin-top: .5rem;
+ 
+    top: 2rem;
+    margin-top: 1rem;
     margin-left: 7rem;
 
 }
 
 /*Logo styling*/
 .logo {
-    width: 12rem;
-    height: 10rem;
-    margin-left: 45%;
-    padding-bottom: 1rem;
+    color: aliceblue;
+    font-size: 6rem;
+    width: 10rem;
+    height: 15rem;
+    margin-left: 35rem;
+    
+    display: inline;
+    text-shadow: 0.2rem 0.3rem rgb(4,124,218)
 
 
 }
@@ -45,12 +51,12 @@ body {
     width: 55rem;
     height: 18rem;
     margin: auto;
-    margin-top: .1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 3rem;
-    box-shadow: 0 0 10px 2px rgb(4, 9, 17);
+    box-shadow: 0 0 10px 2px rgb(4,124,218);
     position:relative;
-    top: 1rem;
+    top: 2rem;
     bottom: 3rem;
     left: 3rem;
 
@@ -61,13 +67,13 @@ body {
 #player {
     width: 12rem;
     height: 3rem;
-    background-color: rgb(54, 83, 139);
+    background-color: rgb(3,46,88);
     border-radius: 1rem;
     border: .3rem solid rgb(235, 241, 247);
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
-    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
+    text-shadow: 0.1rem 0.2rem rgb(4,124,218);
     font-size: 2rem;
     padding: .5rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
@@ -79,13 +85,13 @@ body {
 #game {
     width: 12rem;
     height: 3rem;
-    background-color: rgb(54, 83, 139);
+    background-color: rgb(3,46,88);
     border-radius: 1rem;
     border: .3rem solid whitesmoke;;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
-    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
+    text-shadow: 0.1rem 0.2rem rgb(4,124,218);
     font-size: 2rem;
     padding: .5rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
@@ -98,7 +104,7 @@ body {
 /*main text*/
 #opening {
     font-family: 'Orbitron', sans-serif;
-    color: rgb(25, 53, 95);
+    color: rgb(3,46,88);
     text-align: center;
     text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
     font-size: 1.5rem;
@@ -129,14 +135,14 @@ body {
     margin-left: 20rem;
     width: 15rem;
     height: 5rem;
-    background-color: rgb(54, 83, 139);
+    background-color: rgb(3,46,88);
     border: .3rem solid rgb(238, 242, 245);
     border-radius: 1rem;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
     color: whitesmoke;
-    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
+    text-shadow: 0.1rem 0.2rem rgb(4,124,218);
     font-weight: bold;
     font-size: 2rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
@@ -153,8 +159,8 @@ body {
     margin-left: 4rem;
     width: 6rem;
     height: 6rem;
-    text-shadow: 0.3rem 0.3rem rgb(15, 32, 58);
-    background-color: rgb(54, 83, 139);
+    text-shadow: 0.1rem 0.2rem rgb(4,124,218);
+    background-color: rgb(3,46,88);
     border: .2rem solid rgb(237, 241, 245);
     border-radius: 50rem;
     font-size: 2rem;
@@ -168,12 +174,12 @@ body {
 
 #result {
     font-family: 'Orbitron', sans-serif;
-    color: rgb(25, 53, 95);
+    color: rgb(3,46,88);
     text-align: center;
     text-shadow: 0.1rem 0.1rem rgb(245, 247, 250);
     font-size: 2rem;
-   
-    margin-top: .1rem;
+    margin-top: .2rem;
+    padding: 2rem;
 
 }
 
