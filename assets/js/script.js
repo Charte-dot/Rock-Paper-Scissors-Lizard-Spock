@@ -5,7 +5,7 @@ const startButton = document.getElementById("start");
 const restartButton = document.getElementById("restart");
 const scoreArea = document.getElementById("score-area");
 const openingElement = document.getElementById("opening");
-const instructionElement = document.getElementById("instruction");
+const rulesElement = document.getElementById("rules");
 const rockOption = document.getElementById("rock");
 const paperOption = document.getElementById("paper");
 const scissorsOption = document.getElementById("scissors");
@@ -27,7 +27,7 @@ function startGame() {
   startButton.classList.add("hide");
   restartButton.classList.add("hide");
   openingElement.classList.add("hide");
-  instructionElement.classList.add("hide");
+  rulesElement.classList.add("hide");
   scoreArea.classList.remove("hide");
   resultDisplay.classList.remove("hide");
   rockOption.classList.remove("hide");
