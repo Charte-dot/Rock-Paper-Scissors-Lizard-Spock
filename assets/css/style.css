@@ -72,7 +72,7 @@ body {
     padding: .5rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
     margin-left: 20%;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     display: inline;
 }
 
@@ -111,7 +111,7 @@ body {
 #restart {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
-    margin-top: .5rem;
+    margin-top: 2rem;
     margin-left: 20rem;
     width: 12rem;
     height: 4rem;
@@ -182,7 +182,8 @@ body {
 #rock:hover,
 #paper:hover,
 #scissors:hover,
-#lizard:hover #spock:hover {
+#lizard:hover,
+#spock:hover {
     border-color: rgb(18, 133, 199);
 }
 

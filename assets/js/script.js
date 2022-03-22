@@ -17,12 +17,12 @@ let gameScore = 0;
 
 
 //start button event listeners
- 
+
 startButton.addEventListener('click', startGame);
 
 
 //start game
- 
+
 function startGame() {
   startButton.classList.add("hide");
   restartButton.classList.add("hide");
@@ -35,11 +35,18 @@ function startGame() {
   scissorsOption.classList.remove("hide");
   lizardOption.classList.remove("hide");
   spockOption.classList.remove("hide");
+  playerScore = 0;
+  gameScore = 0;
+  playerScore_span.innerHTML = playerScore;
+  gameScore_span.innerHTML = gameScore;
+  resultDisplay.innerHTML = "Select a button to start!"
+
+
 
 }
 
 //random game move selection
- 
+
 function getGameChoice() {
   const option = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   const randomNumber = Math.floor(Math.random() * 5) + 1;
@@ -47,7 +54,7 @@ function getGameChoice() {
 }
 
 //game win, loose, draw sequence
- 
+
 function game(playerChoice) {
   const gameChoice = getGameChoice();
   switch (playerChoice + gameChoice) {
@@ -138,21 +145,18 @@ function draw(playerChoice, gameChoice) {
 
 //end game and reset scores to play again//
 
+
+
 function endGame() {
   restartButton.classList.remove("hide");
+  restartButton.classList.remove("hide");
   rockOption.classList.add("hide");
-  paperOption.classList.add("hide"); 
+  paperOption.classList.add("hide");
   scissorsOption.classList.add("hide");
   lizardOption.classList.add("hide");
   spockOption.classList.add("hide");
-  playerScore = 0;
-  gameScore = 0;
-  playerScore_span.innerHTML = playerScore;
-  gameScore_span.innerHTML = gameScore;
   
 
 }
-
-
 //event listener for restart button
 restartButton.addEventListener('click', startGame);
