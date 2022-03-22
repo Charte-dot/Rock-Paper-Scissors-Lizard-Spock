@@ -18,7 +18,7 @@
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon-32x32.png">
 
-</head> 
+</head>
 
 <body>
     <!--Main heading-->
@@ -28,55 +28,86 @@
 
     <!--game area to display buttons and opening text-->
     <div class="game-area">
-        <div id="menu">
-            <p id="opening">Play against the computer in this game of chance. <br>
-                Do you think you can win?</p>
-            <p id="rules">How to play<br>
-                This game is a variation on rock, paper, scissors. <br>
-                Play against the computer <br> Win = 1 point <br> Lose = 0 points <br> Draw = -1 point
-           
+        <h1 id="opening">Play against the computer in this game of chance. <br>
+            Do you think you can win?</h1>
+
+        <div id="rules-info" class="hide">
+            <h3>How to play the game</h3>
+            <p> You have five options :
+                Rock <i class="fas fa-hand-rock"></i>,
+                Paper <i class="fas fa-hand-paper"></i>,
+                Scissors <i class="fas fa-hand-scissors"></i>,
+                Lizard <i class="fas fa-hand-lizard"></i>,
+                Spock <i class="fas fa-hand-spock"></i>.
             </p>
-
-            <!--score area to display correct and incorrect scores-->
-            <div id="score-area" class="hide">
-                <div id="player">Player : <span id="player-score">0</span></div>
-                <div id="game">Game : <span id="game-score">0</span></div>
-            </div>
-
-                <!--Results-->
-                <div id="result" class="hide">
-                    <p>Select a button to start</p>
-                </div>
-
-
-            <!--start and restart button-->
-            <button id="start" class="start-btn">Let's Play</button>
-            <button id="restart" class="hide">Play again</button>
-            
-
-            <!--game buttons-->
-            <div class="option">
-                <!--rock-->
-                <button id="rock" class="option hide">
-                    <i class="fas fa-hand-rock"></i></button>
-                <!--paper-->
-                <button id="paper" class="option hide">
-                    <i class="fas fa-hand-paper"></i></button>
-                <!--scissors-->
-                <button id="scissors" class="option hide">
-                    <i class="fas fa-hand-scissors"></i></button>
-                <!--lizard-->
-                <button id="lizard" class="option hide">
-                    <i class="fas fa-hand-lizard"></i></button>
-                <!--spock-->
-                <button id="spock" class="option hide">
-                    <i class="fas fa-hand-spock"></i></button>
-
-                
+            <div id="combos" class="hide">
+                <p>Scissors cuts Paper <i class="fas fa-arrows-alt-h"></i> Paper cover rock.</p>
+                <p>Rock crushes Lizard <i class="fas fa-arrows-alt-h"></i> Lizard poisons Spock</p>
+                <p>Spock smashes Scissors <i class="fas fa-arrows-alt-h"></i> Scissors decapitates Lizard</p>
+                <p>Lizard eats paper <i class="fas fa-arrows-alt-h"></i> Paper disproves Spock</p>
+                <p>Spock vaporises Rock <i class="fas fa-arrows-alt-h"></i> Rock crushes Scissors</p>
+                <p> You have 10 moves to score 10 points but there is a twist!</p>
+                <p> Win = 1 point to player <br> Lose = 1 point to the game <br> Draw = -1 to both</p>
 
             </div>
+
 
         </div>
+
+        <!--score area to display correct and incorrect scores-->
+        <div id="score-area" class="hide">
+            <div id="player">Player : <span id="player-score">0</span></div>
+            <div id="game">Game : <span id="game-score">0</span></div>
+        </div>
+
+        <!--Results-->
+        <div id="result" class="hide">
+            <p>Select a button to start</p>
+        </div>
+
+
+        <!--control button-->
+
+        <!--start button-->
+        <button id="start" class="start-btn" aria-label="click to play game" data-type="game-button">Let's Play</button>
+
+        <!-- game rules button-->
+        <button id="rule-btn" aria-label="click here to open rules of the game" data-type="rule-button">Game
+            rules</button>
+
+        <!--close rules button-->
+        <button id="close-btn" aria-label="click to close rules" data-type="close-button " class="hide">
+            <i class="fas fa-times-circle"></i></button>
+
+        <!--restart button-->
+        <button id="restart" class="hide" aria-label="click to restart game" data-type="restart-button">Play
+            again</button>
+
+
+        <!--game buttons-->
+        <div class="option">
+            <!--rock-->
+            <button id="rock" class="option hide" aria-label="click for rock option" data-type="rock-button">
+                <i class="fas fa-hand-rock"></i></button>
+            <!--paper-->
+            <button id="paper" class="option hide" aria-label="click for paper option" data-type="paper-button">
+                <i class="fas fa-hand-paper"></i></button>
+            <!--scissors-->
+            <button id="scissors" class="option hide" aria-label="click for scissors option"
+                data-type="scissors-button">
+                <i class="fas fa-hand-scissors"></i></button>
+            <!--lizard-->
+            <button id="lizard" class="option hide" aria-label="click for lizard option" data-type="lizard-button">
+                <i class="fas fa-hand-lizard"></i></button>
+            <!--spock-->
+            <button id="spock" class="option hide" aria-label="click for spock option" data-type="spock-button">
+                <i class="fas fa-hand-spock"></i></button>
+
+
+
+        </div>
+
+    </div>
 
     </div>
 

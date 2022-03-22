@@ -2,10 +2,13 @@ const playerScore_span = document.getElementById("player-score");
 const gameScore_span = document.getElementById("game-score");
 const resultDisplay = document.getElementById("result");
 const startButton = document.getElementById("start");
+const ruleDisplay = document.getElementById("rules-info");
+const comboDisplay = document.getElementById("combos")
+const ruleButton = document.getElementById("rule-btn")
+const closeButton = document.getElementById("close-btn")
 const restartButton = document.getElementById("restart");
 const scoreArea = document.getElementById("score-area");
-const openingElement = document.getElementById("opening");
-const rulesElement = document.getElementById("rules");
+const openingDisplay = document.getElementById("opening");
 const rockOption = document.getElementById("rock");
 const paperOption = document.getElementById("paper");
 const scissorsOption = document.getElementById("scissors");
@@ -14,21 +17,44 @@ const spockOption = document.getElementById("spock");
 
 let playerScore = 0;
 let gameScore = 0;
+ 
 
-
-//start button event listeners
+//start rule and restart button event listeners
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
+ruleButton.addEventListener('click', showRules);
+closeButton.addEventListener('click', closeRules )
 
 
+function showRules() {
+  openingDisplay.classList.add("hide")
+  ruleDisplay.classList.remove("hide");
+  comboDisplay.classList.remove("hide");
+  ruleButton.classList.add("hide");
+  closeButton.classList.remove("hide");
+  startButton.classList.add("hide");
+
+}
+
+function closeRules() {
+  openingDisplay.classList.remove("hide")
+  ruleDisplay.classList.add("hide");
+  comboDisplay.classList.add("hide");
+  closeButton.classList.add("hide");
+  ruleButton.classList.remove("hide");
+  startButton.classList.remove("hide");
+}
 
 //start game
 
 function startGame() {
   startButton.classList.add("hide");
   restartButton.classList.add("hide");
-  openingElement.classList.add("hide");
-  rulesElement.classList.add("hide");
+  openingDisplay.classList.add("hide");
+  ruleDisplay.classList.add("hide");
+  comboDisplay.classList.add("hide");
+  ruleButton.classList.add("hide");
+  closeButton.classList.add("close");
   scoreArea.classList.remove("hide");
   resultDisplay.classList.remove("hide");
   rockOption.classList.remove("hide");
