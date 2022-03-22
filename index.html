@@ -32,7 +32,7 @@
             <p id="rules">How to play<br>
                 This game is a variation on rock, paper, scissors. <br>
                 Play against the computer <br>
-                1st to score 10 points wins!
+            Easy = 10 moves <br> Medium = 5 moves <br> Hard = 2 moves
             </p>
 
             <!--score area to display correct and incorrect scores-->
@@ -41,10 +41,17 @@
                 <div id="game">Game : <span id="game-score">0</span></div>
             </div>
 
+                <!--Results-->
+                <div id="result" class="hide">
+                    <p>Select a button to start</p>
+                </div>
+
 
             <!--start and restart button-->
-            <button id="start" class="start-btn"> Let's Play</button>
-            <button id="restart" class="restart-btn hide"> Play again?</button>
+            <button id="easy" class="easy-btn">Easy</button>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+            
 
             <!--game buttons-->
             <div class="option">
@@ -64,10 +71,7 @@
                 <button id="spock" class="option hide">
                     <i class="fas fa-hand-spock"></i></button>
 
-                <!--Results-->
-                <div id="result" class="hide">
-                    <p>Select a button to start</p>
-                </div>
+                
 
             </div>
 

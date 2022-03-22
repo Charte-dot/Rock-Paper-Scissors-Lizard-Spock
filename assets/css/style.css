@@ -34,7 +34,7 @@ body {
     width: 10%;
     height: 10%;
     margin-top: 1%;
-    margin-left: 45%;
+    margin-left: 44%;
 }
 
 /*game area*/
@@ -42,7 +42,7 @@ body {
     background-color: rgba(245, 245, 245, 0.664);
     border-radius: 5rem;
     width: 50rem;
-    height: 25rem;
+    height: 30rem;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -107,14 +107,15 @@ body {
 
 
 /*start button*/
-#start,
-#restart {
+#easy,
+#medium,
+#hard {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
-    margin-top: 2rem;
-    margin-left: 20rem;
-    width: 12rem;
-    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 17rem;
+    width: 15rem;
+    height: 3rem;
     background-color: rgb(3, 46, 88);
     border: .3rem solid rgb(238, 242, 245);
     border-radius: 1rem;
@@ -126,6 +127,7 @@ body {
     font-size: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
 }
+
 
 /*game buttons*/
 #rock,

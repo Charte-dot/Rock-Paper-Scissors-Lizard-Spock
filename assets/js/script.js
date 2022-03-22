@@ -1,8 +1,9 @@
 const playerScore_span = document.getElementById("player-score");
 const gameScore_span = document.getElementById("game-score");
 const resultDisplay = document.getElementById("result");
-const startButton = document.getElementById("start");
-const restartButton = document.getElementById("restart");
+const easyButton = document.getElementById("easy");
+const mediumButton = document.getElementById("medium");
+const hardButton = document.getElementById("hard")
 const scoreArea = document.getElementById("score-area");
 const openingElement = document.getElementById("opening");
 const rulesElement = document.getElementById("rules");
@@ -17,15 +18,17 @@ let gameScore = 0;
 
 
 //start button event listeners
-
-startButton.addEventListener('click', startGame);
+easyButton.addEventListener('click', startGame);
+mediumButton.addEventListener('click', startGame);
+hardButton.addEventListener('click', startGame);
 
 
 //start game
 
 function startGame() {
-  startButton.classList.add("hide");
-  restartButton.classList.add("hide");
+  easyButton.classList.add("hide");
+  mediumButton.classList.add("hide");
+  hardButton.classList.add("hide");
   openingElement.classList.add("hide");
   rulesElement.classList.add("hide");
   scoreArea.classList.remove("hide");
@@ -111,18 +114,20 @@ main();
 
 //score tracker and result display//
 
-function win(playerChoice, gameChoice) {
+function win( playerChoice, gameChoice) {
   playerScore++;
   playerScore_span.innerHTML = playerScore;
   gameScore_span.innerHTML = gameScore;
   resultDisplay.innerHTML = `${playerChoice} beats  ${gameChoice}.... You Win!`;
 
-  if (playerScore > 9) {
-    resultDisplay.innerHTML = "Game over, you win!";
-    endGame();
-  }
-}
 
+  if (playerScore > 9) {
+    resultDisplay.innerHTML = "Game over, you win!... Play Again>";
+    endGame();
+
+  }
+
+}
 //lose function
 
 function lose(playerChoice, gameChoice) {
@@ -132,8 +137,9 @@ function lose(playerChoice, gameChoice) {
   resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!`;
 
   if (gameScore > 9) {
-    resultDisplay.innerHTML = "Game over, you Loose!";
+    resultDisplay.innerHTML = "Game over, you Loose!... Play Again?";
     endGame();
+
   }
 }
 
@@ -145,18 +151,15 @@ function draw(playerChoice, gameChoice) {
 
 //end game and reset scores to play again//
 
-
-
 function endGame() {
-  restartButton.classList.remove("hide");
-  restartButton.classList.remove("hide");
+  easyButton.classList.remove("hide");
+  mediumButton.classList.remove("hide");
+  hardButton.classList.remove("hide");
   rockOption.classList.add("hide");
   paperOption.classList.add("hide");
   scissorsOption.classList.add("hide");
   lizardOption.classList.add("hide");
   spockOption.classList.add("hide");
-  
+
 
 }
-//event listener for restart button
-restartButton.addEventListener('click', startGame);
