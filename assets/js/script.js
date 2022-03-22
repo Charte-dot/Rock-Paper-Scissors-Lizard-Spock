@@ -132,10 +132,10 @@ function lose(playerChoice, gameChoice) {
   gameScore++;
   playerScore_span.innerHTML = playerScore;
   gameScore_span.innerHTML = gameScore;
-  resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Loose!`;
+  resultDisplay.innerHTML = `${playerChoice} loses to  ${gameChoice}.... You Lose!`;
 
   if (gameScore > 9) {
-    resultDisplay.innerHTML = "Game over, you Loose!... Play Again?";
+    resultDisplay.innerHTML = "Game over, you Lose!... Play Again?";
     endGame();
 
   }
@@ -144,6 +144,14 @@ function lose(playerChoice, gameChoice) {
 //draw function
 
 function draw(playerChoice, gameChoice) {
+  playerScore--;
+  playerScore_span.innerHTML = playerScore;
+  gameScore_span.innerHTML = gameScore;
+  resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`;
+
+  gameScore--;
+  playerScore_span.innerHTML = playerScore;
+  gameScore_span.innerHTML = gameScore;
   resultDisplay.innerHTML = `${playerChoice} equal  ${gameChoice}.... Its a Draw!`;
 }
 

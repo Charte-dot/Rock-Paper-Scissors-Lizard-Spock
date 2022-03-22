@@ -11,7 +11,9 @@ body {
     text-align: center;
     text-shadow: 0.2rem 0.2rem rgb(4, 124, 218);
     font-size: 3rem;
-    margin-top: .5rem;
+    width:90%;
+    height: 2%;
+    margin-top: .5;
     margin-left: 7rem;
 
 
@@ -42,7 +44,7 @@ body {
     background-color: rgba(245, 245, 245, 0.664);
     border-radius: 5rem;
     width: 50rem;
-    height: 30rem;
+    height: 23rem;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -299,7 +301,7 @@ body {
 
     .game-area {
         width: 25rem;
-        height: 20rem;
+        height: 23rem;
     }
 
     #opening {
@@ -364,7 +366,7 @@ body {
 @media screen and (max-width: 552px) {
     .game-area {
         width: 20rem;
-        height: 20rem;
+        height: 23rem;
     }
 
     #start,
@@ -452,22 +454,22 @@ body {
 
     .game-area {
         width: 14rem;
-        height: 25rem;
+        height: 26rem;
         margin-left: .2rem;
     }
 
     #start,
     #restart {
         margin-left: 3rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     #player,
     #game {
-        width: .9rem;
+        width: .5rem;
         height: 1rem;
         font-size: .8rem;
-        margin-left: .5rem;
+        margin-left: .2rem;
         padding: .8rem;
     }
 
