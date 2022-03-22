@@ -107,9 +107,26 @@ body {
 
 
 /*start button*/
-#easy,
-#medium,
-#hard {
+
+#start {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    margin-left: 17rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(3, 46, 88);
+    border: .3rem solid rgb(238, 242, 245);
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0.1rem 0.2rem rgb(4, 124, 218);
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
+}
+#restart {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
     margin-top: 1rem;
