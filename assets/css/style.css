@@ -18,7 +18,7 @@ body {
 
 
 }
-
+ /* footer stylings*/
 .footer {
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
@@ -54,11 +54,9 @@ body {
     top: 2rem;
     bottom: 3rem;
     left: 3rem;
-
-
 }
 
-/*scores*/
+/*score display*/
 #player,
 #game {
     width: 10rem;
@@ -78,9 +76,6 @@ body {
     display: inline;
 }
 
-
-
-
 /*main text*/
 #opening {
     font-family: 'Orbitron', sans-serif;
@@ -91,10 +86,7 @@ body {
     padding: 0;
     margin-top: .5rem;
     line-height: 1.5rem;
-
 }
-
-
 
 /*instruction text*/
 #rules-info, #combos {
@@ -110,9 +102,9 @@ body {
 #rule-btn {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-left: 17rem;
-    width: 15rem;
+    width: 10em;
     height: 3rem;
     background-color: rgb(3, 46, 88);
     border: .3rem solid rgb(238, 242, 245);
@@ -126,22 +118,23 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
 }
  
+/* close the rules button*/
+
 #close-btn {
     margin: 0.2rem;
     margin-top: .5rem;
     margin-left: 24rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: rgb(3, 46, 88);
     border: .2rem solid whitesmoke;
     border-radius: 50rem;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: .1rem;
     text-decoration: none;
     color: whitesmoke;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753), 0 6px 20px 0 rgba(0, 0, 0, 0.753);
 }
-
 
 /*start button*/
 
@@ -163,6 +156,8 @@ body {
     font-size: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.753);
 }
+
+/*restart button*/
 #restart {
     font-family: 'Orbitron', sans-serif;
     margin: 0.2rem;
@@ -206,7 +201,7 @@ body {
 
 }
 
-
+/* results display*/
 #result {
     font-family: 'Orbitron', sans-serif;
     color: rgb(3, 46, 88);
@@ -229,9 +224,6 @@ body {
 }
 
 /*button hover effects*/
-.btn:hover {
-    border-color: rgb(18, 133, 199);
-}
 
 #start:hover,
 #restart:hover,
@@ -239,7 +231,9 @@ body {
 #paper:hover,
 #scissors:hover,
 #lizard:hover,
-#spock:hover {
+#spock:hover,
+#rule-btn:hover,
+#close-btn:hover {
     border-color: rgb(18, 133, 199);
 }
 
@@ -294,8 +288,13 @@ body {
         text-align: center;
     }
 
+    #close-btn {
+      margin-left: 18rem;
+    }
+
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         width: 10rem;
         height: 3rem;
         font-size: 1rem;
@@ -336,7 +335,7 @@ body {
 
     .game-area {
         width: 25rem;
-        height: 23rem;
+        height: 30rem;
     }
 
     #opening {
@@ -349,8 +348,14 @@ body {
         line-height: 1.5rem;
     }
 
+#close-btn {
+    margin-left: 12rem;
+}
+
+
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 8rem;
         margin-top: 4rem;
     }
@@ -405,7 +410,8 @@ body {
     }
 
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 5rem;
         margin-top: 4rem;
     }
@@ -417,6 +423,16 @@ body {
         font-size: 1rem;
         margin-left: 1rem;
         padding: .8rem;
+    }
+
+    #rules-info, #combos {
+        font-size: .7rem;
+        line-height: 1rem;
+        text-align: justify;
+    }
+
+    #close-btn {
+        margin-left: 9rem;
     }
 
     #rock,
@@ -443,7 +459,7 @@ body {
 @media screen and (max-width: 476px) {
     .game-area {
         width: 16rem;
-        height: 25rem;
+        height: 27rem;
     }
 
     #rock,
@@ -458,17 +474,22 @@ body {
         font-size: 1.5rem;
     }
 
+    #close-btn {
+        margin-left: 6rem;
+    }
+
     #player,
     #game {
         width: 1rem;
         height: 1rem;
-        font-size: 1rem;
-        margin-left: .5rem;
+        font-size: .8rem;
+        margin-left: .3rem;
         padding: .8rem;
     }
 
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 3rem;
         margin-top: 4rem;
     }
@@ -494,7 +515,8 @@ body {
     }
 
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 3rem;
         margin-top: 1rem;
     }
@@ -504,7 +526,7 @@ body {
         width: .5rem;
         height: 1rem;
         font-size: .8rem;
-        margin-left: .2rem;
+        margin-left: .1rem;
         padding: .8rem;
     }
 
@@ -515,7 +537,8 @@ body {
     }
 
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 2rem;
         margin-top: 3rem;
 
@@ -523,13 +546,14 @@ body {
 
 @media screen and (max-width: 375.20px) {
     .game-area {
-        width: 12rem;
-        height: 25rem;
+        width: 13rem;
+        height: 26rem;
         margin-left: .1rem;
     }
 
     #start,
-    #restart {
+    #restart,
+    #rule-btn {
         margin-left: 1rem;
         margin-top: 2rem;
     }
@@ -548,7 +572,7 @@ body {
     #scissors,
     #lizard,
     #spock {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-top: 2rem;
         width: 3rem;
         height: 3rem;

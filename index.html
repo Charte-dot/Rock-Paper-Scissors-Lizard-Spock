@@ -31,6 +31,7 @@
         <h1 id="opening">Play against the computer in this game of chance. <br>
             Do you think you can win?</h1>
 
+        <!--rules of the game-->
         <div id="rules-info" class="hide">
             <h3>How to play the game</h3>
             <p> You have five options :
@@ -40,6 +41,7 @@
                 Lizard <i class="fas fa-hand-lizard"></i>,
                 Spock <i class="fas fa-hand-spock"></i>.
             </p>
+            <!--winning combinations-->
             <div id="combos" class="hide">
                 <p>Scissors cuts Paper <i class="fas fa-arrows-alt-h"></i> Paper cover rock.</p>
                 <p>Rock crushes Lizard <i class="fas fa-arrows-alt-h"></i> Lizard poisons Spock</p>
@@ -50,8 +52,6 @@
                 <p> Win = 1 point to player <br> Lose = 1 point to the game <br> Draw = -1 to both</p>
 
             </div>
-
-
         </div>
 
         <!--score area to display correct and incorrect scores-->
@@ -77,7 +77,7 @@
 
         <!--close rules button-->
         <button id="close-btn" aria-label="click to close rules" data-type="close-button " class="hide">
-            <i class="fas fa-times-circle"></i></button>
+            <i class="fas fa-times"></i></button>
 
         <!--restart button-->
         <button id="restart" class="hide" aria-label="click to restart game" data-type="restart-button">Play
@@ -103,23 +103,18 @@
             <button id="spock" class="option hide" aria-label="click for spock option" data-type="spock-button">
                 <i class="fas fa-hand-spock"></i></button>
 
-
-
         </div>
 
     </div>
 
     </div>
 
-
+    <!--footer-->
     <footer class="footer"> <i class="fas fa-copyright"></i> copyright 2022 Caroline Harte <i class="fab fa-github"></i>
     </footer>
 
     <!--javascript-->
     <script src="assets/js/script.js"></script>
 </body>
-
-
-
 
 </html>
