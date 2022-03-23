@@ -13,7 +13,7 @@ body {
     font-size: 3rem;
     width:90%;
     height: 2%;
-    margin-top: .5;
+    margin-top: 0.5rem;
     margin-left: 7rem;
 
 
@@ -319,10 +319,10 @@ body {
     #scissors,
     #lizard,
     #spock {
-        margin-left: rem;
+        margin-left: 10rem;
         width: 4rem;
         height: 4rem;
-        font-size: 1.5;
+        font-size: 1.5rem;
     }
 
     #result {

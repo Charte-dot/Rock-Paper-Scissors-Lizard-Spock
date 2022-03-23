@@ -3,11 +3,11 @@ const gameScore_span = document.getElementById("game-score"); //game score count
 const resultDisplay = document.getElementById("result"); // result text for game
 const startButton = document.getElementById("start"); // start button
 const ruleDisplay = document.getElementById("rules-info"); // text area for rules
-const comboDisplay = document.getElementById("combos") // text area for combinations
-const ruleButton = document.getElementById("rule-btn") // rule button
-const closeButton = document.getElementById("close-btn") // close rules button
+const comboDisplay = document.getElementById("combos"); // text area for combinations
+const ruleButton = document.getElementById("rule-btn"); // rule button
+const closeButton = document.getElementById("close-btn"); // close rules button
 const restartButton = document.getElementById("restart"); // restart game button
-const scoreArea = document.getElementById("score-area") // displays score area
+const scoreArea = document.getElementById("score-area"); // displays score area
 const openingDisplay = document.getElementById("opening"); // opening text
 const rockOption = document.getElementById("rock"); // rock button
 const paperOption = document.getElementById("paper"); // paper button
@@ -32,7 +32,7 @@ closeButton.addEventListener('click', closeRules); // close rules button event l
 // shows rules function
 
 function showRules() {
-  openingDisplay.classList.add("hide") // hides main open txt
+  openingDisplay.classList.add("hide"); // hides main open txt
   ruleDisplay.classList.remove("hide"); // displays rules
   comboDisplay.classList.remove("hide"); // displays comination list
   ruleButton.classList.add("hide"); // hides main rule button
@@ -44,7 +44,7 @@ function showRules() {
 // close rules function
 
 function closeRules() {
-  openingDisplay.classList.remove("hide") // displays main open text when rules are closed
+  openingDisplay.classList.remove("hide"); // displays main open text when rules are closed
   ruleDisplay.classList.add("hide"); // hides rules display
   comboDisplay.classList.add("hide"); // hides combinaton list
   closeButton.classList.add("hide"); // hides close button for rules 
@@ -73,7 +73,7 @@ function startGame() {
   gameScore = 0; // displays zero for game score
   playerScore_span.innerHTML = playerScore; // sets players start score to zero
   gameScore_span.innerHTML = gameScore; // sets game start score to zero
-  resultDisplay.innerHTML = "Select a button to start!" // displays a start text in results area
+  resultDisplay.innerHTML = "Select a button to start!"; // displays a start text in results area
 }
 
 /**
