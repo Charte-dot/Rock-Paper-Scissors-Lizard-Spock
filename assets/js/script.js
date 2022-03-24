@@ -26,7 +26,7 @@ ruleButton.addEventListener('click', showRules); // game rules button event list
 closeButton.addEventListener('click', closeRules); // close rules button event listner
 
 /**
- * Credits to web dev simplified https://www.youtube.com/watch?v=riDzcEQbX6k for the concept of hide/unhide for elements on game
+ * Code referenced from https://www.youtube.com/watch?v=riDzcEQbX6k for the concept of hide/unhide for elements on game
  */
 
 // shows rules function
@@ -77,7 +77,7 @@ function startGame() {
 }
 
 /**
- * credits to https://alexabotello.medium.com/javascript-rock-paper-scissors-game-5c7dbb10038a on how 
+ * Code referenced from https://alexabotello.medium.com/javascript-rock-paper-scissors-game-5c7dbb10038a on how 
  * to implement random number generator, switch case and event listeners that function together.
  */
 
@@ -144,7 +144,7 @@ function main() {
 
 main();
 
-/** credits to sebhastian .com https://sebhastian.com/rock-paper-scissors-javascript/ on how to 
+/** code referenced from sebhastian .com https://sebhastian.com/rock-paper-scissors-javascript/ on how to 
  * implement a score counter for the game
  */
 
