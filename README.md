@@ -8,28 +8,41 @@
 
 
 # Table of contents:
- -   [Context](#context)
- -   [UX Design](#UX-Design)
-        - [Target audience](#Target-audience)
-        - [Overview](#Overview)
-        - [User Stories](#User-stories)
-        - [Wireframes](#wireframes)
-        - [Design choices](#Design-choices)
-        - [Background](#Background)
-        - [Colors](#Colors)
-        - [Game Logo](#Game-logo)
-        - [Fonts](#Fonts)
-        - [Icons](#Icons)
- -   [Features](#Features)
-        - [Main heading](#main-heading)
-        - [main area](#main-area)
-        - [Rules section](#rules-section)
-        - [Main game](#main-game)
-        - [Score display](#score-display)
-        - [End game](#End-game)
-        - [Features to implement](#features-to-implement)
+-   [Context](#context)
+ 
+-   [UX Design](#UX-Design)
+     - [Target audience](#Target-audience)
+     - [Overview](#Overview)
+     - [User Stories](#User-stories)
+     - [Wireframes](#wireframes)
+     - [Design choices](#Design-choices)
+     - [Background](#Background)
+     - [Colors](#Colors)
+     - [Game Logo](#Game-logo)
+     - [Fonts](#Fonts)
+     - [Icons](#Icons)
+  
+-   [Features](#Features)
+     - [Main heading](#main-heading)
+     - [main area](#main-area)
+     - [Rules section](#rules-section)
+     - [Main game](#main-game)
+     - [Score display](#score-display)
+     - [End game](#End-game)
+     - [Features to implement](#features-to-implement)
+ 
 
- ---
+  
+-  [Technologies Used](#Technologies-used)
+     - [Main game](#main-game)
+     - [Project management](#project-management)
+     - [Style & Theme](#style-theme)
+     - [Online resources](#online-resources)
+
+-  [Testing](#testing)
+     - [Automated code testing](#automated-code-testing)
+       
+
 
   # Context
   "Rock, Paper, Scissors, Lizard, Spock" was inspired by the game featured in the show  **[The Big Bang Theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/)**. This game is an online virtual version of the hand gesture game spoke about on the show. The game is for all ages as you play against the computer. It will challenge you as the added twist of dropping a point if the player draws the same choice as the computer.
@@ -171,6 +184,55 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 - I would like to add another level to the game, givig the user another option to choose from.
 - I would like to add sound effects to the game.
 - I would have like to have added a high score board with name entry to keep track of high scores.
+
+
+---
+
+# Technologies Used
+
+## languages
+- HTML
+- CSS
+- JavaScript
+
+## Project management
+- Git hub
+- Git Pod
+- Balsamiq wireframes
+
+## Style & Themes
+-  [Google fonts](https://fonts.google.com/) for fonts used throughout the projects
+-  [Fontawesome](https://fontawesome.com/) for the logos used on the buttons within the game
+-  [Unsplash](https://unsplash.com/) for the background imaged used
+-  [Tiny png](https://tinypng.com/) Used to compress file size of the background image
+-  [pine tools](https://pinetools.com/) used to recolour the logo used on the main page of the project
+-  [clipping magic](https://clippingmagic.com/) Used to remove the original background on the logo
+
+## Online resources 
+- [Am I responsive](http://ami.responsivedesign.is/) Multi device mockup generator.
+
+---
+
+# Testing 
+
+## Automated testing
+
+- #### HTML [W3C Markup Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcharte-dot.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F)  Passes with no errors or warnings.
+
+- #### CSS [W3C CSS Validator ](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcharte-dot.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) Passes with no error or warnings
+
+- #### JavaScript [jshint](https://jshint.com/) Passes with no errors or warnings.
+
+![Javascript](media/jshint-test.png)
+
+
+- #### Chrome DevTools - Lighthouse
+
+![Light house score](media/testing-lighthouse.png)
+
+
+## Manual Testing
+
 
 
 
