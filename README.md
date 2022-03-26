@@ -8,9 +8,9 @@
 
 
 # Table of contents:
--   [Context](#context)
+- ##  [Context](#context)
  
--   [UX Design](#UX-Design)
+- ##  [UX Design](#UX-Design)
      - [Target audience](#Target-audience)
      - [Overview](#Overview)
      - [User Stories](#User-stories)
@@ -22,7 +22,7 @@
      - [Fonts](#Fonts)
      - [Icons](#Icons)
   
--   [Features](#Features)
+- ##  [Features](#Features)
      - [Main heading](#main-heading)
      - [main area](#main-area)
      - [Rules section](#rules-section)
@@ -31,16 +31,25 @@
      - [End game](#End-game)
      - [Features to implement](#features-to-implement)
  
-
-  
--  [Technologies Used](#Technologies-used)
+- ##  [Technologies Used](#Technologies-used)
      - [Main game](#main-game)
      - [Project management](#project-management)
      - [Style & Theme](#style-theme)
      - [Online resources](#online-resources)
 
--  [Testing](#testing)
+- ## [Testing](#testing)
      - [Automated code testing](#automated-code-testing)
+     - [Manual testing](#manual-testing)
+     - [Responsiveness](#responsiveness)
+     - [Unrsolved issues](#unresolved-issues)
+
+- ## [Deployment](#deployment)
+     - [Github pages](#github-pages)
+     - [Forking the repository](#forking-the-repository)
+     - [Cloning the repository](#cloning-the-repository)
+
+- ## [Credits](#credits)  
+
        
 
 
@@ -76,23 +85,24 @@
 
   ## User stories
 
-  - First time user:
+  ### First time user:
   1. To be able to access the application with ease.
   2. Have clear navigation.
   3. Easy to read and understand instructions.
   4. Fun interactive application
 
-  - Returning user:
+  ### Returning user:
   1. To be entertained.
   2. Navigate with ease
   3. Satisfying visuals
   4. Clear easy path to starting and restarting the game.
 
-  - As site owner:
+  ### As site owner:
   1. To be able to customise the look and feel of the site with ease.
   2. To make a fun and entertaining application
   3. To make sure the user has fun using the application.
 
+ 
   ## Wireframes
 ![Wireframe](media/Wireframe.png)
 
@@ -230,8 +240,92 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 
 ![Light house score](media/testing-lighthouse.png)
 
+---
 
 ## Manual Testing
+
+- I've mannually tested the Rock, Paper, Scissors, Lizard, Spock on three main devices. A 15' laptop, a 10' Lenovo tablet and a 6.5 inch Samsung Galaxy A12. Easy to view and play on all 3 devices. I sent the deployed link to a friend who tested it on an I phone 7 without any major Issues. 
+
+- One issue that did arise and was brought to my attention was that the scores were clearing on the end of game screen and not displaying the score from the game. This has now been resolved and the scores stay until game is reset allowing the user to see the final score.
+
+
+## Responsiveness
+
+- Overall the game is responsive on majority of screen sizes, the game area is style larger and the play button are stacked three on top and two on the bottom. I positioned the buttons like this for ease of use for the user, instead of a vertical line of buttons.
+
+- The game works in portrait mode without issues, but the responsive design doesn't respond to well to a quick rotation of the screen while the game is active but responds well if the screen is rotated and then the link to the deployed site is activated.
+
+## Unresolved Issues
+- Circular buttons for playing the game can have a delayed response and may need a double tap on a mobile or tablet.
+- If playing on a laptop, the user needs to click near the edge of the button, the responsive surface area is not that large on the buttons.
+
+---
+
+# Deployment
+
+## Github pages
+
+- The site was deployed to github pages once I had the site completed and I was happy with my code. The steps to deployment were as follows:
+- In github repository, I went into settings and scrolled down until I came across git hub page section.
+
+- On the github page section, I click the link to activate github pages.
+
+- I then selected main branch from the source drop down selection and clicked save.
+
+- The page automatically refreshed with a display to indicate the successful deployment.
+
+- After a few minutes my site was sucessfully deployed and viewable on git hub pages with site link.
+
+The live link can be found here [https://charte-dot.github.io/Rock-Paper-Scissors-Lizard-Spock/](https://charte-dot.github.io/Rock-Paper-Scissors-Lizard-Spock/)
+
+## Forking the repository
+
+To use the code without affecting the original code you can do what is called 'Forking the repository'. By forking this respositiory you have a copy of the code at that particular moment in time that you can use freely.To fork this respository you need to:
+
+- Select the respository you want to fork.
+- In the upper right of the repository click the 'fork' button.
+- A copy of the respository will be available within your respositories.
+
+
+## Cloning the repository
+- Select the repository you want to clone.
+- In the upper section of the file beneath the settings options, you click the dropdown button called 'Code'.
+- You then copy the SHH address.
+- In your local IDE open Git Bash.
+- Change the current working directory to where you want the cloned directory to be made.
+- Type `git clone` and then paste your copied SHH address.
+ ```console
+git clone https://charte-dot.github.io/Rock-Paper-Scissors-Lizard-Spock/
+```
+- Click enter and your local clone will be made.
+
+---
+
+# Credits
+
+**[Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY)** Simple rock, paper, scissors tutorial that inspired me and I used this tutorial as a stepping stone for my own project but building it differently. Code used from this tutorial was referenced with the code. 
+
+
+**[Alexa Botello](https://alexabotello.medium.com/javascript-rock-paper-scissors-game-5c7dbb10038a)** Great article and tutorial on how to build rock, paper, scissors game. I did refer back to this tutorial for some elements of my game and code used has been referenced within the code. 
+
+**[sebhastian.com](https://sebhastian.com/rock-paper-scissors-javascript/)** Informative website, which I did refer back to on occasion especially for the score tracker for the game. Any code used is referenced within the code.
+
+[RETURN TO THE TOP](#Rock-Paper-Scissors-Lizard-Spock)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
