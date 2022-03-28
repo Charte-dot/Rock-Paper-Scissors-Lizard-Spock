@@ -104,7 +104,7 @@
 
  
   ## Wireframes
-![Wireframe](media/Wireframe.png)
+![Wireframe](media/wireframe.png)
 
 I designed a basic wireframe first.This was to give me a template to follow and to make sure my original design that I had planned was the outcome and final layout of the application. The layout of the application is the same across all mobile, just resized to fit the device screen. 
 
@@ -191,7 +191,7 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 
 ## Features I would like to implement in the future.
 - I would like to implement a timer to time the game, adding another level of difficulty to the game.
-- I would like to add another level to the game, givig the user another option to choose from.
+- I would like to add another level to the game, giving the user another option to choose from.
 - I would like to add sound effects to the game.
 - I would have like to have added a high score board with name entry to keep track of high scores.
 
@@ -206,8 +206,8 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 - JavaScript
 
 ## Project management
-- Git hub
-- Git Pod
+- GitHub
+- Gitpod
 - Balsamiq wireframes
 
 ## Style & Themes
@@ -247,6 +247,16 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 - I've mannually tested the Rock, Paper, Scissors, Lizard, Spock on three main devices. A 15' laptop, a 10' Lenovo tablet and a 6.5 inch Samsung Galaxy A12. Easy to view and play on all 3 devices. I sent the deployed link to a friend who tested it on an I phone 7 without any major Issues. 
 
 - One issue that did arise and was brought to my attention was that the scores were clearing on the end of game screen and not displaying the score from the game. This has now been resolved and the scores stay until game is reset allowing the user to see the final score.
+
+- Lenovo tablet 10 inch screen
+![Lenovo tablet screen 10 inch screen](media/lenovo-tablet-ss.png)
+
+---
+
+- Acer laptop 15 inch screen
+[Acer laptop 15 inch screen](media/laptop-ss.png)
+
+
 
 
 ## Responsiveness

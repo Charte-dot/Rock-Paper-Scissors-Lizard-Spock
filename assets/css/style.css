@@ -1,6 +1,6 @@
 /*body styling*/
 body {
-    background-image: url(../Images/quiz-background.jpg);
+    background-image: url(../images/quiz-background.jpg);
     background-size: cover;
 }
 
@@ -252,7 +252,7 @@ body {
 
 }
 
-@media screen and (max-width: 1179.20px) {
+@media screen and (max-width: 1180px) {
     .heading {
         margin-left: 1rem;
     }
@@ -331,7 +331,7 @@ body {
 
 }
 
-@media screen and (max-width: 799.20px) {
+@media screen and (max-width: 800px) {
 
     .game-area {
         width: 25rem;
@@ -544,7 +544,7 @@ body {
 
 }
 
-@media screen and (max-width: 375.20px) {
+@media screen and (max-width: 376px) {
     .game-area {
         width: 13rem;
         height: 26rem;
