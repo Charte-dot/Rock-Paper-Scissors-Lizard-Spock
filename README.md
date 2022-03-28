@@ -229,7 +229,7 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 
 - #### HTML [W3C Markup Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcharte-dot.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F)  Passes with no errors or warnings.
 
-- #### CSS [W3C CSS Validator ](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcharte-dot.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) Passes with no error or warnings
+- #### CSS [W3C CSS Validator ](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcharte-dot.github.io%2FRock-Paper-Scissors-Lizard-Spock%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) Passes with no error or warnings
 
 - #### JavaScript [jshint](https://jshint.com/) Passes with no errors or warnings.
 
