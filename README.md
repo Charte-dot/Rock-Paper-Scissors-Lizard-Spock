@@ -249,12 +249,13 @@ I used basic Icons from Font Awesome for the symbols on the player buttons.
 - One issue that did arise and was brought to my attention was that the scores were clearing on the end of game screen and not displaying the score from the game. This has now been resolved and the scores stay until game is reset allowing the user to see the final score.
 
 - Lenovo tablet 10 inch screen
+
 ![Lenovo tablet screen 10 inch screen](media/lenovo-tablet-ss.png)
 
 ---
 
 - Acer laptop 15 inch screen
-[Acer laptop 15 inch screen](media/laptop-ss.png)
+![Acer laptop 15 inch screen](media/laptop-ss.png)
 
 
 
