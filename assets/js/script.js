@@ -1,3 +1,7 @@
+/**
+ * Declare constant for DOM elements
+ * and possible choices
+ */
 const playerScore_span = document.getElementById("player-score"); //player score counter
 const gameScore_span = document.getElementById("game-score"); //game score counter
 const resultDisplay = document.getElementById("result"); // result text for game
